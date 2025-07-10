@@ -2,23 +2,25 @@
 
 :root {
   /* 🌿 Overall body background */
-  --body-background: #e7c9b1; /* Soft terracotta beige */
+  --body-background: #f5f7fb; /* Ultra-soft pale blue-gray, almost airy */
 
-  /* 📖 "Light" section background (light warm cream) */
-  --background-light: #f7ede7; /* Very light warm cream */
+  /* 📖 "Light" section background */
+  --background-light: #e8e5f9; /* Soft lavender with gentle warmth */
 
-  --text-dark: #5a3010; /* Deep burnt sienna for strong contrast */
+  --text-dark: #2e325a; /* Deep muted indigo with a bit of gray for softness */
 
-  /* 🌫️ "Dark" section background (rich terracotta) */
-  --background-dark: #a45330; /* Warm deep terracotta */
+  /* 🌫️ "Dark" section background */
+  --background-dark: #3f427f; /* Rich but muted indigo, less saturated */
 
-  --text-light: #f9f4f0; /* Soft off-white for text */
+  --text-light: #f0eff7; /* Misty off-white with lilac undertone */
 
-  /* 🍋 Accent color (vibrant terracotta) */
-  --accent-yellow: #d9733b; /* Bright terracotta orange */
+  /* 🍋 Accent color */
+  --accent-color: #8a7ff0; /* Dreamy lilac-blue with good vibrance */
 
-  /* 🪵 Optional: stone wall/earth tone (neutral warm brown) */
-  --natural-stone: #b58a6f; /* Muted warm brown */
+  /* Supporting shades */
+  --accent-hover: #6f66d6; /* Slightly deeper lilac for hover states */
+
+  --neutral-gray: #a2a7c1; /* Cool, soft gray for borders and subtle details */
 }
 
 body {
@@ -40,6 +42,14 @@ body {
   font-size: 24px;
 }
 
+.name {
+  color: var(--accent-color);
+}
+
+.name:hover {
+  color: var(--accent-hover);
+}
+
 h2 {
   font-family: "Playfair Display", serif;
   font-size: 48px;
@@ -48,7 +58,7 @@ h2 {
 .light-section h3 {
   font-family: "Playfair Display", serif;
   font-size: 24px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .dark-section {
