@@ -2,21 +2,23 @@
 
 :root {
   /* 🌿 Overall body background */
-  --body-background: #b7ac9f;
+  --body-background: #e7c9b1; /* Soft terracotta beige */
 
-  /* 📖 "Light" section background (light cream) */
-  --background-light: #f0ebe4;
-  --text-dark: #1e1e1e;
+  /* 📖 "Light" section background (light warm cream) */
+  --background-light: #f7ede7; /* Very light warm cream */
 
-  /* 🌫️ "Dark" section background (muted taupe/gray) */
-  --background-dark: #857c6d;
-  --text-light: #f5f2ed;
+  --text-dark: #5a3010; /* Deep burnt sienna for strong contrast */
 
-  /* 🍋 Accent color from the lemon in the mesh bag */
-  --accent-yellow: #f5c144;
+  /* 🌫️ "Dark" section background (rich terracotta) */
+  --background-dark: #a45330; /* Warm deep terracotta */
 
-  /* 🪵 Optional: stone wall/earth tone (used as neutral support color) */
-  --natural-stone: #a2917f;
+  --text-light: #f9f4f0; /* Soft off-white for text */
+
+  /* 🍋 Accent color (vibrant terracotta) */
+  --accent-yellow: #d9733b; /* Bright terracotta orange */
+
+  /* 🪵 Optional: stone wall/earth tone (neutral warm brown) */
+  --natural-stone: #b58a6f; /* Muted warm brown */
 }
 
 body {
@@ -76,4 +78,45 @@ p {
 .grid-2-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  border-radius: 5px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-top: 16px; /* adjust this value as you like */
+  /* existing styles */
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-3-cols > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; /* space between image, paragraph, and button */
+}
+
+footer {
+  color: var(--text-dark);
 }
