@@ -130,3 +130,39 @@ p {
 footer {
   color: var(--text-dark);
 }
+
+@media (max-width: 900px) {
+  .light-section,
+  .dark-section {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    padding: 32px 16px;
+    margin: 48px 24px;
+  }
+
+  .light-section h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .light-section h3 {
+    font-size: 18px;
+  }
+
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .grid-3-cols > div {
+    gap: 8px; /* space between image, paragraph, and button */
+  }
+}
