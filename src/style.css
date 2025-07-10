@@ -156,10 +156,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  h1 {
-    font-size: 20px;
-  }
-
   h2 {
     font-size: 28px;
   }
