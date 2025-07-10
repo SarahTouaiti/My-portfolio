@@ -1,49 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap");
 
 :root {
-  /* 🌿 Overall body background */
-  --body-background: #f5f7fb; /* Ultra-soft pale blue-gray, almost airy */
-
-  /* 📖 "Light" section background */
-  --background-light: #e8e5f9; /* Soft lavender with gentle warmth */
-
-  --text-dark: #2e325a; /* Deep muted indigo with a bit of gray for softness */
-
-  /* 🌫️ "Dark" section background */
-  --background-dark: #3f427f; /* Rich but muted indigo, less saturated */
-
-  --text-light: #f0eff7; /* Misty off-white with lilac undertone */
-
-  /* 🍋 Accent color */
-  --accent-color: #8a7ff0; /* Dreamy lilac-blue with good vibrance */
-
-  /* Supporting shades */
-  --accent-hover: #6f66d6; /* Slightly deeper lilac for hover states */
-
-  --neutral-gray: #a2a7c1; /* Cool, soft gray for borders and subtle details */
+  --body-background: #e8eef7; /* slightly richer creamy bluish-white */
+  --background-light: #cfd9ea; /* a bit deeper pastel blue */
+  --background-dark: #7f8da9; /* stronger dusty blue-gray for contrast */
+  --text-dark: #2f3a57; /* darker slate blue-gray for better readability */
+  --text-light: #f9fafc; /* cleaner, crisper off-white */
+  --accent-color: #2a4067; /* slightly richer deep navy blue */
+  --accent-hover: #1a2b4a; /* deeper navy for hover */
+  --neutral-gray: #a8b3c1; /* a bit cooler grayish blue */
 }
 
 body {
   background-color: var(--body-background);
   margin: 0;
   padding: 0;
-  font-family: "open sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+/* Section spacing (pixel-based) */
+.light-section,
+.dark-section {
+  padding: 64px 32px;
+  margin: 96px auto;
+  border-radius: 8px;
 }
 
 .light-section {
   background-color: var(--background-light);
   color: var(--text-dark);
-  padding: 64px 32px;
-  margin: 96px 48px;
 }
 
-.light-section h1 {
+.dark-section {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+/* Typography */
+h1 {
   font-family: "Playfair Display", serif;
   font-size: 24px;
+  margin-bottom: 12px;
 }
 
 .name {
   color: var(--accent-color);
+  font-size: 48px;
 }
 
 .name:hover {
@@ -52,56 +56,68 @@ body {
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 48px;
+  font-size: 36px;
+  margin-bottom: 16px;
 }
 
 .light-section h3 {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   opacity: 0.9;
-}
-
-.dark-section {
-  background-color: var(--background-dark);
-  color: var(--text-light);
-  padding: 64px 32px;
-  margin: 96px 48px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.contact-link {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--text-dark);
-  cursor: pointer;
+  margin-top: 8px;
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
   word-spacing: 0.5px;
   letter-spacing: 0.3px;
   text-align: justify;
+  font-size: 16px;
+  margin: 8px 0;
 }
+
+/* Layout */
 .grid-2-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
 }
 
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.grid-3-cols > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
 .img-responsive {
   max-width: 100%;
-  border-radius: 5px;
   height: auto;
+  border-radius: 5px;
   display: block;
   margin: 0 auto;
 }
 
+/* Links */
+.contact-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent-color);
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: var(--accent-hover);
+}
+
+/* Button */
 .btn {
-  margin-top: 16px; /* adjust this value as you like */
-  /* existing styles */
   display: inline-block;
   padding: 12px 24px;
   border-radius: 6px;
@@ -109,56 +125,61 @@ p {
   background-color: var(--background-light);
   color: var(--text-dark);
   font-weight: 600;
-  transition: background-color 0.3s, color 0.3s;
-  margin-left: auto;
-  margin-right: auto;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.grid-3-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+.btn:hover {
+  background-color: var(--accent-hover);
+  color: var(--text-light);
+  transform: translateY(-2px);
 }
 
-.grid-3-cols > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px; /* space between image, paragraph, and button */
-}
-
+/* Footer */
 footer {
+  padding: 24px 0;
+  background-color: var(--background-light);
+  text-align: center;
+  font-size: 14px;
   color: var(--text-dark);
+  margin-top: 96px;
 }
 
+/* Utility */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Layout */
 @media (max-width: 900px) {
-  .light-section,
-  .dark-section {
-    padding: 32px 16px;
-    margin: 48px 24px;
-  }
-
-  .light-section h1 {
-    font-size: 16px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  .light-section h3 {
-    font-size: 18px;
-  }
-
-  .grid-2-cols {
-    grid-template-columns: 1fr;
-  }
-
+  .grid-2-cols,
   .grid-3-cols {
     grid-template-columns: 1fr;
   }
 
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+
+  .light-section h3 {
+    font-size: 20px;
+  }
+
   .grid-3-cols > div {
-    gap: 8px; /* space between image, paragraph, and button */
+    gap: 12px;
+  }
+
+  .light-section,
+  .dark-section {
+    padding: 32px 16px;
+    margin: 48px auto;
   }
 }
