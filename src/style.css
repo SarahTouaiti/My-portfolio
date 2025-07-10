@@ -38,7 +38,7 @@ body {
   font-size: 24px;
 }
 
-.light-section h2 {
+h2 {
   font-family: "Playfair Display", serif;
   font-size: 48px;
 }
@@ -47,6 +47,24 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   opacity: 0.8;
+}
+
+.dark-section {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  padding: 64px 32px;
+  margin: 96px 48px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-dark);
+  cursor: pointer;
 }
 
 p {
