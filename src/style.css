@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap");
 
 :root {
-  --body-background: #e8eef7; /* slightly richer creamy bluish-white */
-  --background-light: #cfd9ea; /* a bit deeper pastel blue */
-  --background-dark: #7f8da9; /* stronger dusty blue-gray for contrast */
-  --text-dark: #2f3a57; /* darker slate blue-gray for better readability */
-  --text-light: #f9fafc; /* cleaner, crisper off-white */
-  --accent-color: #2a4067; /* slightly richer deep navy blue */
-  --accent-hover: #1a2b4a; /* deeper navy for hover */
-  --neutral-gray: #a8b3c1; /* a bit cooler grayish blue */
+  --body-background: #faf5fd; /* very pale lilac */
+  --background-light: #e9daf8; /* soft, airy pastel lilac */
+  --background-dark: #b8a1d9; /* gentle light violet */
+  --text-dark: #5b4b7a; /* muted medium purple for good readability */
+  --text-light: #fefcff; /* almost pure off-white */
+  --accent-color: #9c82d7; /* soft but distinct lilac purple */
+  --accent-hover: #7f68c1; /* slightly deeper lilac for hover */
 }
 
 body {
@@ -39,11 +38,11 @@ body {
 }
 
 /* Typography */
-h1 {
+/*h1 {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   margin-bottom: 12px;
-}
+}*/
 
 .name {
   color: var(--accent-color);
