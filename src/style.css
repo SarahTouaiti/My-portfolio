@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+  /* 🌿 Overall body background */
+  --body-background: #b7ac9f;
+
+  /* 📖 "Light" section background (light cream) */
+  --background-light: #f0ebe4;
+  --text-dark: #1e1e1e;
+
+  /* 🌫️ "Dark" section background (muted taupe/gray) */
+  --background-dark: #857c6d;
+  --text-light: #f5f2ed;
+
+  /* 🍋 Accent color from the lemon in the mesh bag */
+  --accent-yellow: #f5c144;
+
+  /* 🪵 Optional: stone wall/earth tone (used as neutral support color) */
+  --natural-stone: #a2917f;
+}
+
+body {
+  background-color: var(--body-background);
+  margin: 0;
+  padding: 0;
+  font-family: "open sans", sans-serif;
+}
+
+.light-section {
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  padding: 64px 32px;
+  margin: 96px 48px;
+}
+
+.light-section h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+
+.light-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+}
+
+.light-section h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+p {
+  line-height: 1.5;
+  word-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  text-align: justify;
+}
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
