@@ -1,13 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap");
 
 :root {
-  --body-background: #faf5fd; /* very pale lilac */
-  --background-light: #e9daf8; /* soft, airy pastel lilac */
-  --background-dark: #b8a1d9; /* gentle light violet */
-  --text-dark: #5b4b7a; /* muted medium purple for good readability */
-  --text-light: #fefcff; /* almost pure off-white */
-  --accent-color: #9c82d7; /* soft but distinct lilac purple */
-  --accent-hover: #7f68c1; /* slightly deeper lilac for hover */
+  /* Base Backgrounds */
+  --body-background: #f8f3ec; /* Main background – soft creamy beige */
+  --background-light: #f2dbc0; /* Pale peach – left triangle area */
+  --background-dark: #eac197; /* Muted sandy yellow – deeper triangle */
+
+  /* Text Colors */
+  --text-dark: #1b130f; /* Almost black – used for name and email */
+  --text-light: #fefcf9; /* Softest white – for use on dark blocks */
+
+  /* Accent Colors */
+  --accent-color: #d5b17b; /* Warm beige-gold – the rectangle behind "FRONT-END DEVELOPER" */
+  --accent-hover: #b8956b; /* Slightly darker beige – hover or active */
+
+  /* Optional Borders / Shadows / Surfaces */
+  --border-color: #d8c2ab; /* Light taupe – for subtle dividing lines */
+  --surface-color: #f6eee6; /* Creamy overlay – matches soft texture areas */
 }
 
 body {
@@ -23,7 +32,7 @@ body {
 .light-section,
 .dark-section {
   padding: 64px 32px;
-  margin: 96px auto;
+  margin: 96px 96px;
   border-radius: 8px;
 }
 
